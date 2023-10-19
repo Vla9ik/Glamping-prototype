@@ -45,70 +45,79 @@
 			</div>
 		</header>
 		<main class="page">
-			<div class="contacts">
-				<div class="contacts__container">
-					<h2 data-aos="fade-right" data-aos-delay="60" data-aos-duration="700" class="contacts__title title">Contacts</h2>
-					<div data-aos="fade-up" data-aos-delay="70" data-aos-duration="1000" class="contacts__body">
-						<div class="contacts__location">Our glamping is located 30 km from Tbilisi.</div>
-						<div class="contacts__adress">Adress: Georgia, Inner Kartli, Kaspi Municipality, Kavtiskhevi, </div>
-						<div class="contacts__ip">41.869560 44.448465</div>
-						<div class="contacts__phone">Phone number:<a href="tel:000000">+00000000</a></div>
-						<div class="contacts__mail">E-mail:<a href="mailto:example@gmail.com">example@gmail.com</a></div>
-					</div>
-					<div data-aos="fade-up" data-aos-delay="80" data-aos-duration="1000" class="contacts__socials social-contacts">
-						<a href="#" class="social-contacts__link _icon-inst"></a>
-						<a href="#" class="social-contacts__link _icon-tg"></a>
-						<a href="#" class="social-contacts__link _icon-whatsapp"></a>
-					</div>
-					<iframe data-aos="fade-up" data-aos-delay="90" data-aos-duration="1000" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d11884.840317783614!2d44.44420333860166!3d41.8668263694564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDUyJzEwLjQiTiA0NMKwMjYnNTQuNSJF!5e0!3m2!1suk!2sua!4v1697556063187!5m2!1suk!2sua" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
-			</div>
-			<section class="some-section">
-				<div class="header-page">
-					<div class="header-page__bg-ibg"><img src="img/sertificate-page/bg.svg" alt="bg"></div>
+			<section class="page__orders-main orders-main">
+				<div class="orders-main__header-page header-page">
+					<div class="header-page__bg-ibg"><img src="img/bg-second.jpg" alt="bg"></div>
 					<div class="header-page__content">
 						<div class="header-page__logo logo ">
 							<img src="img/logo.svg" alt="logo">
 						</div>
-						<h1 class="header-page__title">gift certificates</h1>
+						<h1 class="header-page__title">booking</h1>
 					</div>
 				</div>
 			</section>
-
-			<div class="order-information__card card-order">
-				<h2 class="card-order__title title">Summary</h2>
-				<div class="card-order__wrapper">
-					<div class="card-order__info">
-						<div class="card-order__image-ibg">
-							<img src="img/cards/01.jpg" alt="image">
+			<section class="page__order-information order-information">
+				<div class="order-information__container">
+					<form data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000" action="#" class="order-information__form form-order">
+						<h2 class="form-order__title title">Contact information</h2>
+						<div class="form-order__inputs">
+							<div class="input-wrapper">
+								<label class="label">First Name</label>
+								<input autocomplete="off" type="text" name="form[]" placeholder="" class="input">
+							</div>
+							<div class="input-wrapper">
+								<label class="label">Second Name</label>
+								<input autocomplete="off" type="text" name="form[]" placeholder="" class="input">
+							</div>
 						</div>
-						<div class="card-order__descr">
-							<div class="card-order__name">Glamping dome</div>
-							<div class="card-order__date">Oct 17 - 19, 2 guests</div>
+						<div class="input-wrapper">
+							<label class="label">Email</label>
+							<input autocomplete="off" type="email" name="form[]" placeholder="" class="input">
 						</div>
-					</div>
-					<div class="card-order__price price-card">
-						<div class="price-card__wrapper">
-							<div class="price-card__name">100$ x 1 night</div>
-							<div class="price-card__number">200$</div>
+						<div class="input-wrapper">
+							<label class="label">Phone Number</label>
+							<input autocomplete="off" type="text" name="form[]" placeholder="" class="input">
 						</div>
-						<div class="price-card__wrapper">
-							<div class="price-card__name">Service Fee</div>
-							<div class="price-card__number">30$</div>
+						<div class="form-order__info">
+							By clicking <span>Agree and continue</span>, you agree to the Mindori <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a>
 						</div>
-						<div class="price-card__wrapper">
-							<div class="price-card__name">Breakfast</div>
-							<div class="price-card__number">50$ </div>
+						<button type="submit" class="form-order__button book">Agree and Continue</button>
+					</form>
+					<div data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000" class="order-information__card card-order">
+						<h2 class="card-order__title title">Summary</h2>
+						<div class="card-order__wrapper">
+							<div class="card-order__info">
+								<div class="card-order__image-ibg">
+									<img src="img/cards/01.jpg" alt="image">
+								</div>
+								<div class="card-order__descr">
+									<div class="card-order__name">Glamping dome</div>
+									<div class="card-order__date">Oct 17 - 19, 2 guests</div>
+								</div>
+							</div>
+							<div class="card-order__price price-card">
+								<div class="price-card__wrapper">
+									<div class="price-card__name">100$ x 1 night</div>
+									<div class="price-card__number">200$</div>
+								</div>
+								<div class="price-card__wrapper">
+									<div class="price-card__name">Service Fee</div>
+									<div class="price-card__number">30$</div>
+								</div>
+								<div class="price-card__wrapper">
+									<div class="price-card__name">Breakfast</div>
+									<div class="price-card__number">50$ </div>
+								</div>
+							</div>
+							<div class="card-order__total total-card">
+								<div class="total-card__title">Total:</div>
+								<div class="total-card__price">280$</div>
+							</div>
 						</div>
-					</div>
-					<div class="card-order__total total-card">
-						<div class="total-card__title">Total:</div>
-						<div class="total-card__price">280$</div>
 					</div>
 				</div>
-			</div>
 
-
+			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
