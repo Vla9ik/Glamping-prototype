@@ -1395,6 +1395,35 @@ textarea.input {
   position: relative;
 }
 
+.date-form__form .input-wrapper_date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  border: 1px solid #3d5224;
+}
+
+.date-form__form .input-wrapper_date::before {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0px, -50%);
+      -ms-transform: translate(0px, -50%);
+          transform: translate(0px, -50%);
+  right: 5px;
+  pointer-events: none;
+}
+
+.date-form__form .input-wrapper_date .input {
+  border: none;
+  padding: 0.6875rem 1.25rem;
+}
+
 .label {
   position: absolute;
   z-index: 5;
